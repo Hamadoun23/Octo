@@ -1,0 +1,202 @@
+/* ===================================
+    03. Reset
+====================================== */
+
+html {
+    font-size: 16px;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.2;  
+    font-weight: 400;
+    background: #fff;
+    color: #1f1f1f;
+    -moz-osx-font-smoothing: grayscale;
+    word-break: break-word;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden !important;
+
+    .sub-bg{
+        background: #faf7f9;
+    }
+
+    &.creative-agency{
+        font-family: "Inter", sans-serif;
+        color: #283841;
+        
+        h1,h2,h3,h4,h5,h6{
+            font-family: "Boldonse", system-ui;
+            line-height: 1.4;
+        }
+
+        p{
+            color: #344249;
+        }
+    }
+
+    &.design-agency,
+    &.marketing-agency,
+    &.creative-portfolio,
+    &.freelancer{
+
+        .main-color{
+            color: #FF6A3A;
+        }
+
+        .bg-main-color{
+            background: #FF6A3A;
+        }
+    }
+
+    &.creative-portfolio,
+    &.freelancer{
+        
+        h1,h2,h3,h4,h5,h6{
+            font-family: "Bricolage Grotesque", sans-serif;
+        }
+    }
+
+    &.design-agency,
+    &.freelancer{
+        font-family: "Sora", sans-serif;
+    }
+
+    &.startup-agency{
+        font-family: "Unbounded", sans-serif;
+
+        .main-color{
+            color: #FF6A3A;
+        }
+
+        .bg-main-color{
+            background: #FF6A3A;
+        }
+
+        .sm-title-dot{
+        
+            &:before{
+                background: #FF6A3A;
+            }
+        }
+
+        p{
+            font-family: "Poppins", sans-serif;
+        }
+    }
+
+    .lines{
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 90%;
+        left: 5%;
+        border-right: 1px solid rgba(0,0,0,.1);
+        border-left: 1px solid rgba(0,0,0,.1);
+        opacity: .3;
+
+        &:after,
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 20%;
+            width: 20%;
+            height: 100%;
+            border-right: 1px solid rgba(0,0,0,.1);
+            border-left: 1px solid rgba(0,0,0,.1);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        &:before{
+            left: auto;
+            right: 20%;
+        }
+    }
+
+    .blur-div{
+        backdrop-filter: blur(10px);
+        bottom: 0;
+        flex: none;
+        height: 100px;
+        left: 0;
+        mask: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%) add;
+        overflow: visible;
+        position: fixed;
+        right: 0;
+        pointer-events: none;
+        z-index: 999;
+    }
+}
+.play-text{
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-weight: 400;
+}
+section {
+    padding-top: 120px; padding-bottom: 120px;
+    &.half-section {
+        padding-top: 70px; padding-bottom: 70px;
+    }
+    &.big-section {
+        padding-top: 140px; padding-bottom: 140px;
+    }
+    &.extra-big-section {
+        padding-top: 160px; padding-bottom: 160px;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+ul {
+    li {
+        list-style: none;
+    }
+
+    &.rest{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+video {
+    background-size: cover;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.accordion,
+.accordion-item{
+    color: inherit !important;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    border-color: #dc3545 !important;
+}
+.g-recaptcha.is-invalid iframe {
+    border:1px solid #dc3545 !important;
+}
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1200px;
+    }
+}
+
+.social-icon-circle{
+
+    a{
+
+        &:hover{
+            background: #fff;
+            color: #171717;
+        }
+    }
+}

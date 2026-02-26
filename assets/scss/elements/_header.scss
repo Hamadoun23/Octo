@@ -1,0 +1,396 @@
+/* Headers
+-----------------------------------------------------------------*/
+
+.hero-style1 {
+    position: relative;
+    padding: 200px 0 120px;
+    z-index: 10;
+
+    .lg-text {
+
+        h1 {
+            font-size: 15vw;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: -.8rem;
+            line-height: .8;
+        }
+    }
+
+    .wrapper-imgs {
+        position: relative;
+        width: max-content;
+        z-index: 9;
+
+        .fit-img {
+            width: 80px;
+            height: 350px;
+            border-radius: 60px;
+            margin: 0 5px;
+            overflow: hidden;
+            flex-grow: 1;
+            
+            .info {
+                color: #fff;
+                position: absolute;
+                left: 10px;
+                bottom: 10px;
+                border-radius: 10px;
+                width: calc(100% - 20px);
+                padding: 20px 30px;
+                background: rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(10px);
+                z-index: 5;
+                opacity: 0;
+            }
+        }
+    }
+
+    .cards-wrapper {
+        position: relative;
+        height: 350px;
+
+        .fit-img {
+            height: 450px;
+            overflow: hidden;
+            position: relative;
+            
+            .info {
+                color: #fff;
+                position: absolute;
+                left: 10px;
+                bottom: 10px;
+                border-radius: 10px;
+                width: calc(100% - 20px);
+                padding: 20px 30px;
+                background: rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(10px);
+                z-index: 5;
+            }
+        }
+    }
+
+}
+
+.hero-style2 {
+    padding: 200px 0 0;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -6%;
+        height: 600px;
+        width: 600px;
+        filter: blur(70px);
+        display: inline-block;
+        background-color: rgba(5, 45, 146, 0.6);
+        border-radius: 30%;
+        pointer-events: none;
+    }
+}
+
+.hero-style3 {
+    padding: 120px 0 120px;
+
+    .caption {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .container {
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        position: relative;
+
+        &:after,
+        &:before {
+            content: '';
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #000000;
+            position: absolute;
+            top: 0;
+            left: -2px;
+        }
+
+        &:after {
+            top: auto;
+            bottom: 0;
+        }
+    }
+
+    h1 {
+        font-size: 90px;
+    }
+
+    .exp {
+        margin-right: 80px;
+        width: 100%;
+
+        h2 {
+            font-size: 300px;
+            line-height: 1;
+            white-space: nowrap;
+            position: relative;
+
+            span {
+                font-size: 14px;
+                padding: 14px 30px;
+                border-radius: 30px;
+                background: #FF6A3A;
+                color: #000;
+                position: absolute;
+                bottom: 60px;
+                right: -20px;
+                transform: rotate(10deg);
+            }
+        }
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        position: relative;
+
+        &:after,
+        &:before {
+            content: '';
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #000000;
+            position: absolute;
+            top: 0;
+            right: -2px;
+        }
+
+        &:after {
+            top: auto;
+            bottom: 0;
+        }
+    }
+
+    .box3 {
+
+        &:after {
+            right: auto;
+            left: -2px;
+            bottom: auto;
+            top: 0;
+        }
+    }
+
+    .box4 {
+
+        &:before {
+            right: auto;
+            left: -2px;
+            top: auto;
+            bottom: 0;
+        }
+    }
+
+    .box2,
+    .box4 {
+        border-right: 0;
+    }
+
+    .box3,
+    .box4 {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .lg-text {
+        font-size: 22vw;
+        line-height: .8;
+        position: relative;
+
+        .img1 {
+            width: 160px;
+            height: 220px;
+            border-radius: 15px;
+            position: absolute;
+            top: 0;
+            left: 15%;
+            transform: rotate(-10deg);
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .img2 {
+            width: 160px;
+            height: 220px;
+            border-radius: 15px;
+            position: absolute;
+            bottom: 0;
+            right: 10%;
+            transform: rotate(30deg);
+            overflow: hidden;
+        }
+
+        .img3 {
+            width: 160px;
+            height: 220px;
+            border-radius: 15px;
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            overflow: hidden;
+            z-index: -1;
+            filter: blur(10px);
+        }
+    }
+}
+
+.hero-style4 {
+    padding: 220px 0 60px;
+    position: relative;
+
+    h1 {
+        font-size: 10vw;
+        letter-spacing: -4px;
+    }
+
+    &.f-style{
+
+        &:after{
+            content: '';
+            width: 750px;
+            height: 750px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: -1;
+        }
+    }
+}
+
+.hero-style5 {
+    padding: 200px 0 0;
+
+    .links {
+
+        >div {
+            position: relative;
+            overflow: hidden;
+            padding: 10px 0;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 0;
+                background: #FF6A3A;
+                z-index: -1;
+                transition: all .4s;
+            }
+
+            &:hover {
+
+                &:after {
+                    width: 100%;
+                }
+
+                a {
+                    transform: scale(1.4);
+                    transform-origin: 0%;
+                }
+            }
+        }
+
+        a {
+            font-size: 80px;
+            line-height: .8;
+            transition: all .4s;
+        }
+    }
+
+    .caption {
+
+        h1 {
+            font-size: 7.8vw;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+        }
+    }
+}
+
+.hero-style6 {
+    padding: 200px 0 60px;
+
+    .tags{
+
+        li{
+            display: inline-block;
+        }
+
+        a{
+            padding: 14px 30px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
+            margin: 4px 2px;
+            transition: all .4s;
+
+            &:hover{
+                background: #000000;
+                color: #ffffff;
+            }
+        }
+    }
+
+    .circle-button svg{
+        fill: #000000;
+    }
+}
+
+.content__img {
+    width: 225px;
+    height: 170px;
+    border-radius: 10px;
+    position: absolute;
+    top: 170px;
+    left: 0px;
+    opacity: 0;
+    overflow: hidden;
+    will-change: transform, filter;
+}
+
+.content__img-inner {
+    background-position: 50% 50%;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-size: cover;
+    position: absolute;
+    top: calc(-1 * 20px / 2);
+    left: calc(-1 * 20px / 2);
+}
+
+.pg-hero{
+    padding: 200px 0 0;
+
+    h1{
+        letter-spacing: -2px;
+    }
+
+    .main-marq{
+        margin-bottom: -50px;
+
+        h4{
+            text-transform: uppercase;
+            line-height: 1;
+            font-size: 12vw !important;
+            font-weight: 500;
+        }
+    }
+}

@@ -1,0 +1,163 @@
+
+/* Services
+-----------------------------------------------------------------*/
+
+.serv-style1{
+
+    .item{
+        padding-bottom: 50px;
+        border-bottom: 1px solid rgba(0,0,0,.05);
+
+        .img{
+            clip-path: polygon(.057% 7.915%, .057% 7.915%, .016% 6.68%, .093% 5.491%, .278% 4.367%, .561% 3.328%, .933% 2.394%, 1.384% 1.586%, 1.906% .922%, 2.489% .423%, 3.122% .109%, 3.798% 0%, 96.169% 0%, 96.169% 0%, 96.847% .11%, 97.484% .427%, 98.068% .93%, 98.591% 1.599%, 99.043% 2.414%, 99.415% 3.354%, 99.696% 4.4%, 99.878% 5.531%, 99.951% 6.726%, 99.905% 7.966%, 92.486% 94.172%, 92.486% 94.172%, 92.361% 95.151%, 92.165% 96.067%, 91.903% 96.911%, 91.582% 97.673%, 91.208% 98.344%, 90.786% 98.915%, 90.323% 99.375%, 89.825% 99.716%, 89.298% 99.927%, 88.749% 100%, 10.856% 100%, 10.856% 100%, 10.303% 99.927%, 9.774% 99.713%, 9.274% 99.369%, 8.809% 98.904%, 8.386% 98.328%, 8.011% 97.65%, 7.691% 96.881%, 7.43% 96.03%, 7.236% 95.107%, 7.115% 94.122%, .057% 7.915%);
+            height: 250px;
+            overflow: hidden;
+        }
+
+        ul{
+            margin: 0;
+
+            li{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.serv-style2{
+    background-color: #fff;
+
+    h3{
+        position: relative;
+        width: max-content;
+
+        .fit-img{
+            position: absolute;
+            top: 50%;
+            height: 70px;
+            right: -130px;
+            width: 0;
+            transform: translateY(-50%);
+            transition: all .4s;
+        }
+    }
+
+    .item{
+
+        &:hover{
+
+            h3{
+
+                .fit-img{
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+.serv-style3{
+
+    .accordion-item{
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 50px 0 0;
+        background: transparent;
+
+        .icon-arrow{
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border: 1px solid transparent;
+            border-radius: 50%;
+        }
+
+        &.active{
+
+            .icon-arrow{
+                border-color: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+
+    .accordion-header{
+
+        h6{
+            color: #FF6A3A;
+        }
+    }
+
+    .accordion-collapse{
+        border-radius: 0;
+    }
+
+    .accordion-body{
+        padding: 0;
+    }
+
+    .tags{
+            
+        a{
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.serv-style4{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(2505, 0, 0, 0.1);
+
+    .item{
+        padding: 80px 40px;
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+
+        &:last-of-type{
+            border-right: 0;
+        }
+
+        .text{
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all .4s;
+        }
+
+        &:hover{
+
+            .text{
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+    }
+}
+
+.serv-style5{
+
+    .item{
+        padding: 60px 40px 0;
+
+        .img{
+            border-radius: 15px 15px 0 0;
+            overflow: hidden;
+        }
+    }
+}
+
+.process{
+
+    .item{
+        padding: 40px 30px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        height: 100%;
+
+        span{
+            color: #FF6A3A;
+        }
+
+        h6{
+            font-size: 26px;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+
+/* About Intro
+-----------------------------------------------------------------*/
+
+.intro-style1 {
+
+    .container-full {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .rectangle {
+        background: #d2d7d3;
+        height: 500px;
+        width: 25%;
+        border-radius: 15px;
+        margin: 0 5px;
+      }
+}
+
+.intro-style2{
+
+    .fs-250{
+        position: relative;
+        display: inline-block;
+        line-height: 1;
+
+        span{
+            position: absolute;
+            top: 40px;
+            right: -30px;
+            font-size: 30px;
+        }
+    }
+}
+
+.img-bord-color{
+    border-bottom: 10px solid #FF6A3A;
+}
+
+.skills{
+
+    .sub-bg{
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .tag{
+        padding: 5px 10px;
+        border-radius: 30px;
+        background: rgba(255,255,255,.05);
+        font-size: 12px;
+        margin: 4px 0;
+    }
+}

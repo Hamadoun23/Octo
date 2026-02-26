@@ -1,0 +1,232 @@
+
+/* Menu
+-----------------------------------------------------------------*/
+
+.navbar{
+	position: absolute;
+	left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+	width: 100%;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+	z-index: 999;
+
+	&.static{
+		position: relative;
+	}
+
+	&.bord{
+		border-color: rgba(0,0,0,.05);
+	}
+
+	&.blur{
+		backdrop-filter: blur(10px);
+	}
+
+	&.nav-scroll{
+		border-color: rgba(0,0,0,.05);
+		backdrop-filter: blur(10px);
+		padding: 0;
+		position: fixed;
+		top: -80px;
+		transition: transform .8s;
+		transform: translateY(80px);
+	}
+
+	.icon-bar{
+		color: #1f1f1f;
+	}
+
+	.navbar-nav{
+  
+		.nav-link{
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px;
+            font-weight: 500;
+			color: #1f1f1f;
+            padding: 20px 10px 15px 10px;
+            margin: 0 15px;
+
+            .rolling-text{
+                height: 30px;
+                line-height: 30px;
+            }
+		}
+
+		&.light{
+
+			.nav-link{
+				color: #fff;
+			}
+		}
+
+		.dropdown-menu{
+			padding: 10px 5px;
+			border: 1px solid #eee;
+		}
+    }
+
+    .dropdown-menu{
+        display: block;
+		position: absolute;
+		top: 75px;
+        opacity: 0;
+        visibility: hidden;
+        border-radius: 0;
+        color: #1f1f1f;
+        background: #fff;
+		border: 1px solid #eee;
+		border-radius: 5px;
+        min-width: 255px;
+        transform: translateY(20px);
+        transition: all .4s;
+    
+        &.show{
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+		&.show-left{
+
+			.dropdown-item{
+
+				.dropdown-side{
+					left: auto;
+					right: 248px;
+				}
+			}
+		}
+    
+        .dropdown-item{
+            font-size: 14px;
+            color: #1f1f1f;
+            transition: all .4s;
+            padding: 10px 25px;
+            position: relative;
+
+			.dropdown-side{
+				position: absolute;
+				left: 248px;
+				top: -15px;
+				display: block;
+				opacity: 0;
+				visibility: hidden;
+				border: 1px solid #eee;
+				border-radius: 5px;
+				background: #fff;
+				width: 240px;
+				padding: 20px 0px;
+				transform: translateY(20px);
+				transition: all .4s;
+
+				&.show{
+					opacity: 1;
+					visibility: visible;
+					transform: translateY(0);
+				}
+			}
+
+			.icon-arrow{
+				position: absolute;
+				right: 15px;
+			}
+    
+            &:after{
+                content: '';
+                width: 0px;
+                height: 1px;
+                background: #000;
+                position: absolute;
+                left: 10px;
+                top: 18px;
+                transition: all .4s;
+            }
+    
+            &:hover{
+                padding-left: 30px;
+                background: transparent;
+                
+                &:after{
+                    width: 10px;
+                }
+            }
+        }
+    }
+
+	.no-relative{
+		position: static;
+	}
+
+	.dropdown{
+		position: static;
+	}
+
+	.mega-menu{
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 75px;
+		overflow: hidden;
+		padding: 0 !important;
+		border: 0 !important;
+		background: transparent;
+
+		.container{
+			padding: 40px !important;
+			border: 1px solid #393939;
+			background: #252424;
+			border-radius: 5px;
+		}
+
+		.title{
+			margin-bottom: 20px;
+
+			.sub-title{
+				font-weight: 600;
+			}
+		}
+
+		.item-img{
+
+			.img{
+				border-radius: 5px;
+				overflow: hidden;
+				border: 1px solid rgba(255,255,255,.05);
+			}
+		}
+	}
+
+	.logo{
+		position: relative;
+	}
+    
+    .contact-button{
+		position: relative;
+
+		.butn{
+			background: #1d1d1d;
+			color: #ffffff;
+			border: 1px solid rgba(0, 0, 0, 0.1);
+			padding: 12px 25px;
+			transition: all .4s;
+
+			&:hover{
+				background: transparent;
+				color: #1d1d1d;
+			}
+		}
+	}
+
+	.menu-icon{
+		padding: 25px 30px;
+	}
+
+    .dropdown-toggle:after{
+        margin-left: 5px;
+        vertical-align: 12px;
+    }
+}

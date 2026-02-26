@@ -1,0 +1,142 @@
+/* ===================================
+    03. Reset
+====================================== */
+html {
+  font-size: 16px; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  background: #fff;
+  color: #1f1f1f;
+  -moz-osx-font-smoothing: grayscale;
+  word-break: break-word;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden !important; }
+  body .sub-bg {
+    background: #faf7f9; }
+  body.creative-agency {
+    font-family: "Inter", sans-serif;
+    color: #faf7f9; }
+    body.creative-agency h1, body.creative-agency h2, body.creative-agency h3, body.creative-agency h4, body.creative-agency h5, body.creative-agency h6 {
+      font-family: "Boldonse", system-ui;
+      line-height: 1.4; }
+    body.creative-agency p {
+      color: #faf7f9; }
+  body.design-agency .main-color, body.marketing-agency .main-color, body.creative-portfolio .main-color, body.freelancer .main-color {
+    color: #5f6f31; }
+  body.design-agency .bg-main-color, body.marketing-agency .bg-main-color, body.creative-portfolio .bg-main-color, body.freelancer .bg-main-color {
+    background: #5f6f31; }
+  body.creative-portfolio h1, body.creative-portfolio h2, body.creative-portfolio h3, body.creative-portfolio h4, body.creative-portfolio h5, body.creative-portfolio h6, body.freelancer h1, body.freelancer h2, body.freelancer h3, body.freelancer h4, body.freelancer h5, body.freelancer h6 {
+    font-family: "Bricolage Grotesque", sans-serif; }
+  body.design-agency, body.freelancer {
+    font-family: "Sora", sans-serif; }
+  body.startup-agency {
+    font-family: "Unbounded", sans-serif; }
+    body.startup-agency .main-color {
+      color: #5f6f31; }
+    body.startup-agency .bg-main-color {
+      background: #5f6f31; }
+    body.startup-agency .sm-title-dot:before {
+      background: #5f6f31; }
+    body.startup-agency p {
+      font-family: "Poppins", sans-serif; }
+  body .lines {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 90%;
+    left: 5%;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: .3; }
+    body .lines:after, body .lines:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 20%;
+      width: 20%;
+      height: 100%;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+      border-left: 1px solid rgba(255, 255, 255, 0.1);
+      z-index: -1;
+      pointer-events: none; }
+    body .lines:before {
+      left: auto;
+      right: 20%; }
+  body .blur-div {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    bottom: 0;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    height: 100px;
+    left: 0;
+    -webkit-mask: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black)) add;
+    -webkit-mask: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%) add;
+    mask: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black)) add;
+    mask: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%) add;
+    overflow: visible;
+    position: fixed;
+    right: 0;
+    pointer-events: none;
+    z-index: 999; }
+
+.play-text {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400; }
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px; }
+  section.half-section {
+    padding-top: 70px;
+    padding-bottom: 70px; }
+  section.big-section {
+    padding-top: 140px;
+    padding-bottom: 140px; }
+  section.extra-big-section {
+    padding-top: 160px;
+    padding-bottom: 160px; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+ul li {
+  list-style: none; }
+
+ul.rest {
+  margin: 0;
+  padding: 0; }
+
+video {
+  background-size: cover;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%; }
+
+.accordion,
+.accordion-item {
+  color: inherit !important; }
+
+:focus-visible {
+  outline: none; }
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+  border-color: #dc3545 !important; }
+
+.g-recaptcha.is-invalid iframe {
+  border: 1px solid #dc3545 !important; }
+
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1200px; } }
+
+.social-icon-circle a:hover {
+  background: #fff;
+  color: #171717; }

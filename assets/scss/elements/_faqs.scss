@@ -1,0 +1,25 @@
+
+/* Faqs
+-----------------------------------------------------------------*/
+
+.faq-style1{
+
+    .accordion-item{
+        background: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+        padding: 30px;
+
+        h6{
+            font-weight: 300;
+        }
+
+        &.active{
+            background: rgba(0, 0, 0, 0.02);
+
+            h6{
+                font-weight: 500;
+            }
+        }
+    }
+}

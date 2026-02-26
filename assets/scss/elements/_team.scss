@@ -1,0 +1,238 @@
+
+/* Team
+-----------------------------------------------------------------*/
+
+.team-mp{
+
+    .item{
+        background: #eee;
+        border-radius: 15px;
+        transition: all .4s;
+
+        &:hover{
+            background: #2d03ff;
+        }
+
+        .img{
+            width: 420px;
+            height: 170px;
+            overflow: hidden;
+
+            img{
+                filter: grayscale(1);
+            }
+        }
+
+        .cont{
+            padding: 30px 0 0 50px;
+
+            span{
+                font-size: 14px;
+                color: #1f1f1f;
+                margin-top: 15px;
+            }
+        }
+
+        .social-icon{
+            padding: 30px 30px 0 0;
+
+            a{
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                text-align: center;
+                border: 1px solid rgba(0,0,0,.2);
+                border-radius: 50%;
+                font-size: 14px;
+                margin: 0 5px;
+
+                &:hover{
+                    background: #fff;
+                    color: #212121;
+                    transition: all .4s;
+                }
+            }
+        }
+    }
+
+    &.style2{
+
+        .item{
+
+            &:hover{
+                background: #FF6A3A;
+            }
+        }
+    }
+}
+
+.team-style1{
+
+    .item{
+        position: relative;
+        z-index: 3;
+
+        &:after{
+            content: '';
+            width: 100vw;
+            height: 70px;
+            background: rgba(255,255,255,.1);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            transition: all .4s;
+            z-index: -1;
+            opacity: 0;
+        }
+
+        .fit-img{
+            position: absolute;
+            top: -50px;
+            left: 100px;
+            width: 200px;
+            height: 220px;
+            transform: translateY(40px);
+            transition: all .4s;
+            opacity: 0;
+        }
+
+        &:hover{
+
+            .fit-img{
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            &:after{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.team-style2{
+
+    .caption{
+
+        h2{
+            font-size: 12vw;
+            line-height: 1;
+        }
+    }
+
+    .gallery__item{
+        margin-top: -225px;
+        position: relative;
+
+        a{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .item{
+
+        .fit-img{
+            position: relative;
+
+            &:after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(transparent, #1f1f1f);
+                opacity: 0;
+                transition: all .4s;
+            }
+    
+            .cont{
+                position: absolute;
+                bottom: 40px;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                z-index: 3;
+                opacity: 0;
+                transition: all .4s;
+            }
+    
+            &:hover{
+    
+                &:after,
+                .cont{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+
+.team-style3{
+    position: relative;
+    padding-top: 340px !important;
+    z-index: 4;
+
+    &.no-pad{
+        padding-top: 120px !important;
+    }
+
+    .sec-head-crev{
+        position: absolute;
+        top: 120px;
+        width: 100%;
+        z-index: -1;
+
+        h2{
+            letter-spacing: -4px;
+        }
+    }
+
+    .item{
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+        &.mt-mins{
+            margin-top: -100px;
+        }
+
+        &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(transparent, #1f1f1f);
+            opacity: 0;
+            transition: all .4s;
+        }
+
+        .cont{
+            color: #fff;
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 3;
+            opacity: 0;
+            transition: all .4s;
+        }
+
+        &:hover{
+
+            &:after,
+            .cont{
+                opacity: 1;
+            }
+        }
+    }
+}
