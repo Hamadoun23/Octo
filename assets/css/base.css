@@ -680,3 +680,90 @@ h6.fs-14.fw-400.ls-1px.text-uppercase.mb-30px {
 .rate h2 {
 	color: #5f6f31 !important;
 }
+
+/* Octo Consulting - Loader unifié (toutes les pages) */
+.loader-wrap {
+	background-image: url('../../OctoAssets/loadbg.png');
+	background-size: cover;
+	background-position: center;
+}
+.loader-wrap svg {
+	fill: transparent;
+}
+.loader-wrap .loader-wrap-heading .load-text {
+	font-weight: bold;
+}
+
+/* Octo Consulting - Navigation mobile améliorée */
+@media screen and (max-width: 992px) {
+	.navbar {
+		background: #fff !important;
+		box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+	}
+	.navbar .navbar-collapse {
+		background: #fff;
+		margin-top: 15px;
+		padding: 10px 0 20px;
+		border-top: 1px solid rgba(0,0,0,0.08);
+		max-height: 70vh;
+		overflow-y: auto;
+	}
+	.navbar .navbar-nav .nav-link {
+		padding: 16px 30px;
+		font-size: 15px;
+		color: #1a1a1a !important;
+		border-bottom: 1px solid rgba(0,0,0,0.06);
+		min-height: 48px;
+		display: flex;
+		align-items: center;
+	}
+	.navbar .navbar-nav .nav-item:last-of-type .nav-link {
+		border-bottom: none;
+	}
+	.navbar .navbar-nav .dropdown-menu {
+		background: #f8f9fa;
+		border: none;
+		border-radius: 0;
+		padding: 0;
+		margin: 0 0 0 20px;
+		box-shadow: none;
+		position: static !important;
+		transform: none !important;
+		opacity: 1;
+		visibility: visible;
+		display: none;
+	}
+	.navbar .navbar-nav .dropdown-menu.show {
+		display: block;
+		margin-bottom: 10px;
+	}
+	.navbar .navbar-nav .dropdown-menu .dropdown-item {
+		padding: 14px 30px;
+		font-size: 14px;
+		border-bottom: 1px solid rgba(0,0,0,0.05);
+	}
+	.navbar .navbar-nav .dropdown-menu .dropdown-item:last-child {
+		border-bottom: none;
+	}
+	.navbar .navbar-nav .dropdown-menu .dropdown-divider {
+		margin: 5px 0;
+	}
+	.navbar .contact-button {
+		display: none !important;
+	}
+	.navbar .navbar-toggler {
+		min-width: 48px;
+		min-height: 48px;
+		padding: 12px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.navbar .icon-bar {
+		color: #1a1a1a !important;
+		font-size: 22px;
+	}
+	.navbar .logo img {
+		max-height: 45px;
+	}
+}
